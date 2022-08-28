@@ -7,4 +7,9 @@
 
 <%= button_to "Send via controller", home_group_message_path %>
 
+<%= form_tag "/home/say_hello", method: :post do %>
+<%= text_field_tag :text, nil,  required: true %>
+<%= submit_tag "say hello"%>
+<% end %>
+
 

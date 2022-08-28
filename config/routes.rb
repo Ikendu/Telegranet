@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   post "home/group_message", to: "home#group_message"
+  post "home/say_hello" => "home#say_hello"
 end
