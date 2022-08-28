@@ -10,7 +10,10 @@
   </head>
 
   <body>
-    <%= notice %>
+    <%= notice %><hr>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Post", posts_path %>
+   <hr>
     <%= yield %>
   </body>
 </html>
